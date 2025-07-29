@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.legenda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 10;
+}
+
+.legenda h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.legenda p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.botao-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+  background-color: #128c7e;
+}
